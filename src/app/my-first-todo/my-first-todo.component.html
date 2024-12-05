@@ -7,6 +7,8 @@
     <li *ngFor="let todo of todos">
       <input type="checkbox" ngModel="my-first-todo.completed">
       <span ngClass="{'completed': todo.completed}">{{ todo.title }}</span>
+      <button
+        (click) = "removeTodo (todo)"> Remove </button>
       
     </li>
   </ul>

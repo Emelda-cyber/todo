@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NgModel } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
+  standalone: false,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+
+
 })
 export class AppComponent {
-  title = 'todo-list';
+  title: string = 'todo-list';
 }
+

@@ -25,5 +25,7 @@ export class TodoComponent implements OnInit {
     todo.completed = !todo.completed;
   }
 
-  
+removeTodo (todo: Todo): void {
+  this.todos = this.todos.filter(t => t.title !== todo.title);
+}
 }
